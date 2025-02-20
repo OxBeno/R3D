@@ -1,17 +1,25 @@
+#!/usr/bin/env python3
+
+
 import requests
 import argparse
 
 def logo():
     logo = """
-       ____     ______             | 
-      /    \          |            |
-     /______\         |            |
-    / \         ______|     ______ |
-   /   \              |    |       |
-  /     \             |    |       |
- /       \      ______|    |_______|
+
+_______      _______         _____
+|      |            |       |     \\
+|      |            |       |      \\
+|  ____|     _______|       |       |
+|  \                |       |       |
+|   \               |       |      /
+|    \       _______|       |_____/
+
 
 """
+    return logo
+
+print(logo())
 
 def ensure_scheme(domain):
     """
